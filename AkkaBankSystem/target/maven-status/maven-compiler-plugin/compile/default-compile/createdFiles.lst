@@ -1,0 +1,16 @@
+com\systemedistribue\akkabanksystem\SGBD\JSONHandler.class
+com\systemedistribue\akkabanksystem\messages\ReponseOperation.class
+com\systemedistribue\akkabanksystem\messages\UpdateSoldeClient.class
+com\systemedistribue\akkabanksystem\messages\InstructionClient.class
+com\systemedistribue\akkabanksystem\acteurs\SecretaireActeur.class
+com\systemedistribue\akkabanksystem\AkkaBankSystem.class
+com\systemedistribue\akkabanksystem\messages\AnnonceClient.class
+com\systemedistribue\akkabanksystem\acteurs\ObjectMapper.class
+com\systemedistribue\akkabanksystem\acteurs\BanquierActeur.class
+com\systemedistribue\akkabanksystem\acteurs\JSONManagerActeur.class
+com\systemedistribue\akkabanksystem\messages\RefBanquier.class
+com\systemedistribue\akkabanksystem\acteurs\ClientActeur.class
+com\systemedistribue\akkabanksystem\Operation.class
+com\systemedistribue\akkabanksystem\ClientData.class
+com\systemedistribue\akkabanksystem\messages\DemandeOperation.class
+com\systemedistribue\akkabanksystem\messages\ClientAjout.class

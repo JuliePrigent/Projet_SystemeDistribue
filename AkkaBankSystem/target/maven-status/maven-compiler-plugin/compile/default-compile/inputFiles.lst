@@ -1,0 +1,16 @@
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\SGBD\JSONHandler.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\messages\InstructionClient.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\messages\RefBanquier.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\acteurs\BanquierActeur.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\acteurs\ClientActeur.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\messages\AnnonceClient.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\Operation.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\acteurs\SecretaireActeur.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\messages\ReponseOperation.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\messages\ClientAjout.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\ClientData.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\messages\UpdateSoldeClient.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\acteurs\JSONManagerActeur.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\AkkaBankSystem.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\acteurs\ObjectMapper.java
+C:\Users\julie\Documents\BDIA\S1\02_Systèmes_distribués\Projet_syst_distr\projet\AkkaBankSystem\src\main\java\com\systemedistribue\akkabanksystem\messages\DemandeOperation.java
