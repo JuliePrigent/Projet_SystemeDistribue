@@ -25,13 +25,10 @@ public class JSONManagerActeur extends AbstractActor{
     }
 
     private void handleClientAjout(ClientAjout clientAjout)throws IOException {
-        System.out.println("handleClientAjout de jsonManager");
-
         JSONHandler.writeClientDataToJson(clientAjout.getClientData());
     }
 
     private void handleUpdateSoldeClient(UpdateSoldeClient updateSoldeClient) throws IOException{
-         System.out.println("handleClientUpdate de jsonManager");
         JSONHandler.updateClientSoldeInJson(updateSoldeClient.getClientId(), updateSoldeClient.getNouveauSolde());
     }
 }

@@ -25,7 +25,7 @@ public class JSONHandler {
         // Écrire le contenu dans le fichier avec l'option CREATE et TRUNCATE_EXISTING
         Files.write(jsonFilePath, objectMapper.writeValueAsBytes(rootNode), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
 
-        System.out.println("Fichier JSON initialisé avec succès.");
+        System.out.println("Fichier JSON initialisé");
     }
 
     public static void writeClientDataToJson(ClientData clientData) throws IOException {
@@ -43,7 +43,7 @@ public class JSONHandler {
         // Écrire le contenu mis à jour dans le fichier
         Files.write(jsonFilePath, objectMapper.writeValueAsBytes(rootNode), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
 
-        System.out.println("Données JSON écrites avec succès dans le fichier existant.");
+        System.out.println("Données JSON pour le client : " + clientData.getClientId() + " ajoutées");
     }
     
     private static ObjectNode readJsonFile() throws IOException {
@@ -53,8 +53,6 @@ public class JSONHandler {
     }
 
     public static void updateClientBalanceInJson(String clientId, double newBalance) throws IOException {
-        System.out.println("updateClientBalanceInJson (p2) de JSONHandler");
-
         ObjectNode rootNode = readJsonFile();
 
         // Mettre à jour le solde du client
@@ -69,13 +67,11 @@ public class JSONHandler {
         // Écrire le contenu mis à jour dans le fichier
         Files.write(jsonFilePath, objectMapper.writeValueAsBytes(rootNode), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
 
-        System.out.println("Solde du client mis à jour avec succès dans le fichier JSON.");
+        System.out.println("Solde du client  : " + clientId +" mis à jour avec succès dans le fichier JSON.");
     }
 
-    public static void updateClientSoldeInJson(String clientId, double newBalance) throws IOException {
-        System.out.println("UpdateClientSolde de JSONHandler");
-// Même logique que updateClientBalanceInJson
-        updateClientBalanceInJson(clientId, newBalance);
+    public static void updateClientSoldeInJson(String clientId, double newBalance) throws IOException{ 
+       updateClientBalanceInJson(clientId, newBalance);
     }
 
     public static double getSoldeFromJson(String clientId) throws IOException {

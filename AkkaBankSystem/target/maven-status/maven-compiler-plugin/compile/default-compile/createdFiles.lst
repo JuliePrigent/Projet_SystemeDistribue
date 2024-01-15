@@ -4,8 +4,8 @@ com\systemedistribue\akkabanksystem\messages\UpdateSoldeClient.class
 com\systemedistribue\akkabanksystem\messages\InstructionClient.class
 com\systemedistribue\akkabanksystem\acteurs\SecretaireActeur.class
 com\systemedistribue\akkabanksystem\AkkaBankSystem.class
+com\systemedistribue\akkabanksystem\JeuxTest\JeuxTest.class
 com\systemedistribue\akkabanksystem\messages\AnnonceClient.class
-com\systemedistribue\akkabanksystem\acteurs\ObjectMapper.class
 com\systemedistribue\akkabanksystem\acteurs\BanquierActeur.class
 com\systemedistribue\akkabanksystem\acteurs\JSONManagerActeur.class
 com\systemedistribue\akkabanksystem\messages\RefBanquier.class

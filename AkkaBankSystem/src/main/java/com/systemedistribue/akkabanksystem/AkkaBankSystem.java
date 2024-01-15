@@ -7,13 +7,13 @@ package com.systemedistribue.akkabanksystem;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import com.systemedistribue.akkabanksystem.JeuxTest.JeuxTest;
 import com.systemedistribue.akkabanksystem.SGBD.JSONHandler;
 import com.systemedistribue.akkabanksystem.acteurs.BanquierActeur;
 import com.systemedistribue.akkabanksystem.acteurs.ClientActeur;
 import com.systemedistribue.akkabanksystem.acteurs.JSONManagerActeur;
 import com.systemedistribue.akkabanksystem.acteurs.SecretaireActeur;
 import com.systemedistribue.akkabanksystem.messages.AnnonceClient;
-import com.systemedistribue.akkabanksystem.messages.DemandeOperation;
 import com.systemedistribue.akkabanksystem.messages.InstructionClient;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -35,39 +35,12 @@ public class AkkaBankSystem {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        // Créer le système d'acteur
-        ActorSystem system = ActorSystem.create("BanqueSystem");
         
-        ActorRef jsonManager = system.actorOf(Props.create(JSONManagerActeur.class), "jsonManager");
-
-        // Créer un banquier avec une liste de clients
-        List<ActorRef> clientsBanquier = new ArrayList<>();
-
-        System.out.println("Création du client...");
-
-        ActorRef client = system.actorOf(ClientActeur.props(100.00), "client");
-        clientsBanquier.add(client); // Ajouter le client à la liste
-
-        System.out.println("Création du banquier...");
-        ActorRef banquier = system.actorOf(Props.create(BanquierActeur.class, clientsBanquier), "banquier");
+        JeuxTest test = new JeuxTest();
+        test.cas1();
+        test.cas2();
+        test.cas3();
+        test.cas4();
         
-        // Créer la secrétaire avec la liste manuelle de clients-banquiers
-        System.out.println("Création de la secrétaire...");
-        Map<ActorRef, ActorRef> clientsBanquiers = new HashMap<>();
-        clientsBanquiers.put(client, banquier);
-
-        ActorRef secretaire = system.actorOf(Props.create(SecretaireActeur.class, clientsBanquiers), "secretaire");
-
-        // Simuler une demande de transaction depuis le client
-        System.out.println("Simulation d'une demande de transaction depuis le client...");
-        //Le client s'annonce
-        secretaire.tell(new AnnonceClient(), client);
-
-        //le client demande une operation à son banquier 
-        client.tell(new InstructionClient(Operation.DEPOSER, 10000.00), ActorRef.noSender());
-  
-         
-        //client.tell(new InstructionClient(Operation.DEPOSER, 10000.00), ActorRef.noSender());
-
     }
 }

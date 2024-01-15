@@ -34,21 +34,15 @@ public class BanquierActeur extends AbstractActor {
                 .build();
     }
      private void traiterOperation(DemandeOperation demande) throws IOException{
-        System.out.println("traiterOpe de banquierActeur");
         
-// Vérifier si le client existe dans la liste du banquier
+        // Vérifier si le client existe dans la liste du banquier
         if (!clients.contains(getSender())) {
             System.out.println("Je n'ai pas ce compte client dans ma liste");
         }
-
-        System.out.println("J'ai reçu une demande d'un de mes clients");
-        System.out.println("Opération : " + demande.operation);
-        System.out.println("Montant : " + demande.montant);
-
         // Traiter la demande du client
         double solde = JSONHandler.getSoldeFromJson(getSender().path().name());
         
-        System.out.println("Solde avant l'opération : " + solde);
+        System.out.println("Client et solde avant l'opération : " + solde);
 
         // Mettre à jour le solde du client
         if (demande.operation == Operation.RETIRER && solde >= demande.montant) {

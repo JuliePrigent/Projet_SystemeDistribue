@@ -25,10 +25,8 @@ public class SecretaireActeur extends AbstractActor {
     public Receive createReceive() {
         return receiveBuilder()
                 .match(AnnonceClient.class, client -> {
-                    System.out.println("un client se presente, je lui envoi sa ref banquier");
                     ActorRef banquier = clientsBanquiers.get(getSender());
                     getSender().tell(new RefBanquier(banquier), getSelf());
-                
                 })
                 .build();
     }
